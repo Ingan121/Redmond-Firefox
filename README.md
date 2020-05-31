@@ -1,4 +1,6 @@
 # Redmond-Firefox
+Modified to look more like IE6 with userJS and some modifications. (pending)
+
 An Internet Explorer inspired theme for Firefox
 ![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/screenshot3.png)
 ## About
