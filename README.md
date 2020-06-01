@@ -1,8 +1,16 @@
 # Redmond-Firefox
 Modified version of Redmond-Firefox that look more IE4-IE6 before XP with userJS and some modifications. (WIP)
 
-Designed for use with real classic theme. If you're using Windows newer than 8, visit [WinClassic](https://winclassic.boards.net) to apply classic theme on your desktop.
+Designed for use with real classic theme on Windows. If you're using Windows newer than 8, visit [WinClassic](https://winclassic.boards.net) to apply classic theme on your desktop.
 
+## Installation
+Put the contents of Firefox-ExecutableDir into the Firefox directory (usually in C:\Program Files\Mozilla Firefox) and delete the startupCache folder in %localappdata%\Mozilla\Firefox\Profiles\(your profile folder).
+
+If you use bookmarks bar, move the bookmarks toolbar items to the toolbar below address bar then disable the original bookmarks bar.
+
+Current version only supports the compact mode, so if you don't use it, you should change the height values in toolbars.css.
+
+# Original README
 An Internet Explorer inspired theme for Firefox
 ![Image Screenshot](https://github.com/Ingan121/Redmond-Firefox/blob/master/Screenshots/Screenshot7.png)
 ## About
