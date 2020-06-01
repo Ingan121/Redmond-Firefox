@@ -18,7 +18,14 @@
     border-image: url("image/combobox.png") !important;
     border-image-slice: 2 2 2 2 !important; 
     min-height: 25px !important;
-    height: 25px !important;
+}
+
+#urlbar-container {
+    margin: 0px !important;
+}
+
+#additional_top_toolbar1 {
+    height: 28px;
 }
 
 #search-container {
@@ -72,8 +79,8 @@
 
 #main-window[uidensity="compact"] #urlbar,
 #main-window[uidensity="compact"] #urlbar[breakout][breakout-extend][breakout-extend-animate] {
-    margin-top: -5px !important;
-    padding-left: 3px !important; }
+    margin-top: -6px !important;
+    padding-left: 4px !important; }
 
 #urlbar[breakout-extend] {
     top:calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;

@@ -14,7 +14,7 @@
 }
 
 #browser-bottombox {
-	height: 20px;
+	height: 20px !important;
         border: 0px solid transparent !important;
         border-right: 1px solid transparent !important;
         box-shadow: 0 2px #c0c0c0 inset, 1px 3px #505050 inset, -1px -1px #fff inset !important;
@@ -46,5 +46,10 @@
 html[inFullscreen="true"] #browser-bottombox {
 	display:none !important;
 }
-html[inFullscreen="true"] #statuspanel {
-	
+html[inFullscreen="true"] #statuspanel {}
+
+
+#addonbar {
+   background: transparent !important;
+   height: 22px;
+}

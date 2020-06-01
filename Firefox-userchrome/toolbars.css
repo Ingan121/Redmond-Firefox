@@ -1,9 +1,10 @@
 #nav-bar:not(:-moz-lwtheme) {
+  height: 35px !important;
   margin-top: -1px !important;
   background-image: url("image/top.png") !important;
   background-position: left bottom; 
-  padding: 1px !important;
-  padding-top: 2px !important;
+  padding: 0px !important;
+  padding-top: 0px !important;
   border: 2px solid !important;
   border-top: 2px solid !important;
   border-left: 7px solid !important;
@@ -11,31 +12,34 @@
   border-image-slice: 2 2 2 7 !important;
 }
 
-toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+#nav-bar-customization-target {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme):not(#addonbar) {
   -moz-appearance: none !important;
   background-image: url("image/bottom.png") !important;
-  margin-bottom: 2px !important;
-  padding: 1px !important;
+  padding: 2px !important;
   border: 2px solid !important;
   border-left: 7px solid !important;
   border-top: 0px !important;
   border-image: url("image/toolbar_handle.png") !important;
-  border-image-slice: 2 2 2 7 !important; }
+  border-image-slice: 2 2 2 7 !important;
+}
 
 #toolbar-menubar {
   -moz-appearance: none !important;
   margin-bottom: 2px !important;
   height: 28px !important;
-  padding: 0px !important;
   padding-left: 2px !important;
   border: 2px solid !important;
   border-left: 7px solid !important;
   border-right: 43px solid !important;
   border-bottom: 0px !important;
   border-image: url("image/menu_bar_handle.png") !important;
-  border-image-slice: 2 43 2 7 !important; }
-
-
+  border-image-slice: 2 43 2 7 !important;
+}
 
 #browser {
    border: solid !important;

@@ -1,10 +1,70 @@
-#TabsToolbar {
-  display: block !important;
-  position: absolute !important;
-  top: 2px !important;
-  right: 48px !important;
-  max-width: calc(100% - 470px) !important;
- }
+#TabsToolbar {                                                                                             
+  -moz-appearance: unset !important;
+  display:block !important;     
+  background: transparent !important;
+}
+
+#window-controls {
+  display: none;
+}
+
+#TabsToolbar .private-browsing-indicator{
+  display:none !important;
+}
+
+#tabbrowser-tabs {
+  width: 100vw !important;
+}
+
+/* Modify to change window drag space width */
+:root[tabsintitlebar="true"] #nav-bar{ --window-drag-space-width: 24px }
+
+.titlebar-buttonbox-container{
+  position: fixed;
+  top:0;
+  right:0;
+  height: 40px;
+display:block !important;
+}
+#toolbar-menubar[inactive] > .titlebar-buttonbox-container{ opacity: 0 }
+
+:root[sizemode="maximized"] > #navigator-toolbox{ padding-top: 8px !important; }
+:root[sizemode="maximized"] .titlebar-buttonbox-container{ top: 8px }
+
+:root[uidensity="compact"] .titlebar-buttonbox-container{ height: 32px }
+.titlebar-buttonbox-container > .titlebar-buttonbox{ height: 100%; }
+#titlebar{
+ -moz-box-ordinal-group: 2;
+  -moz-appearance: none !important;
+  display:block !important;
+}
+:root[tabsintitlebar="true"] #nav-bar{
+  padding-right: calc(138px + var(--window-drag-space-width,0px));
+  padding-left: var(--window-drag-space-width,0px)
+}
+.titlebar-placeholder,
+#TabsToolbar .titlebar-spacer{ display: none; }
+/* Also hide the toolbox bottom border which isn't at bottom with this setup */
+#navigator-toolbox::after{ display: none !important; }
+
+/* Menubar on top patch - use with Fx65_tabs_on_bottom.css */
+/* Only really useful if menubar is ALWAYS visible */
+
+#main-window:not([sizemode="fullscreen"]) #navigator-toolbox{
+  margin-top: 20px;
+  padding-top: 10px !important;
+}
+
+#toolbar-menubar{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  height: 10px;
+  padding-top: 2.5px !important;
+  width: 100%;
+  overflow: hidden;
+  display:block !important;
+}
 
 /* remove default tab colors */
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"],

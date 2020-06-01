@@ -197,7 +197,7 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
   visibility: collapse !important;
 }
 
-#PersonalToolbar toolbarbutton {
+#additional_top_toolbar2 toolbarbutton {
   margin-top: -2px !important;
   margin-bottom: -2px !important;
   padding: 6px !important;
@@ -209,25 +209,25 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
   min-height: 22px !important; 
   max-height: 22px !important;
   border: 1px solid transparent !important;
-background-color: transparent !important;
+  background-color: transparent !important;
 }
 
-#PersonalToolbar toolbarbutton > .toolbarbutton-icon {
+#additional_top_toolbar2 toolbarbutton > .toolbarbutton-icon {
   margin-right:2px !important;
   border: none !important;
 }
 
-#PersonalToolbar toolbarbutton > .toolbarbutton-text {
+#additional_top_toolbar2 toolbarbutton > .toolbarbutton-text {
   margin:0px !important;
 }
 
-#main-window #PersonalToolbar toolbarbutton:hover {
+#main-window #additional_top_toolbar2 toolbarbutton:hover {
   border-radius: 0 !important;
   border-image: url("image/toolbar_button.png") !important;
   border-image-slice: 1 1 1 1 !important; }
 }
 
-#PersonalToolbar toolbarbutton:active {
+#additional_top_toolbar2 toolbarbutton:active {
   border-radius: 0 !important;
   border-image: url("image/toolbar_handle.png") !important;
   border-image-slice: 1 1 1 1 !important; 
