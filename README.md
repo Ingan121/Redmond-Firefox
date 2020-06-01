@@ -1,6 +1,7 @@
 # Redmond-Firefox
 Modified version of Redmond-Firefox that look more IE4-IE6 before XP with userJS and some modifications. (WIP)
-Designed for use with real classic theme, if you're using Windows newer than 8, visit [WinClassic](https://winclassic.boards.net)
+
+Designed for use with real classic theme. If you're using Windows newer than 8, visit [WinClassic](https://winclassic.boards.net) to apply classic theme on your desktop.
 
 An Internet Explorer inspired theme for Firefox
 ![Image Screenshot](https://github.com/Ingan121/Redmond-Firefox/blob/master/Screenshots/Screenshot7.png)
