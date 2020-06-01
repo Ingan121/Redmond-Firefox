@@ -23,20 +23,18 @@ Note:
 
 The Firefox theme should now be installed and will be activated once you close all Firefox sessions and restart Firefox.
 
+## Limitations
+* Inherit color support is not currently finished.
+* Also the theme was designed with a certain color scheme in mind so it may not display correctly
+with certain color schemes.
+* For now it is recommended to use the "Windows Standard" (2000) color scheme.
+
 # Original README
 An Internet Explorer inspired theme for Firefox
-![Image Screenshot](https://github.com/Ingan121/Redmond-Firefox/blob/master/Screenshots/Screenshot7.png)
 
 ## About
 The Redmond-Firefox project aims to create a Firefox theme mimicking classic Internext Explorer.
 The project originally started when I was designing Firefox themes to go along with my GTK Redmond97 and Redmond2K themes.
-
-## Limitations
-Inherit color support is not currently finished.
-Also the theme was designed with a certain color scheme in mind so it may not display correctly
-with certain color schemes. I'm working on adding inherit functions to the theme and I'm currently 
-designing a script to apply selected colors from the active GTK theme and apply it to the Firefox theme. 
-For now I recommend using my default [Redmond97](https://github.com/matthewmx86/Redmond97) theme.
 
 ##Screenshots
 ![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/screenshot3.png)
