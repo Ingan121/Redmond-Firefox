@@ -1,9 +1,9 @@
-# Redmond-Firefox
-Modified version of Redmond-Firefox that looks like IE6 before XP with the use of user JS and some modifications. (WIP)
+# IE6Fox
+Modified version of Redmond-Firefox designed for pre-XP IE6-like look with the use of user JS and some modifications. (WIP)
 
 Designed for use with real classic theme on Windows. If you're using Windows newer than 8, visit [WinClassic](https://winclassic.boards.net) to apply classic theme on your desktop.
 
-![Image Screenshot](https://github.com/Ingan121/Redmond-Firefox/blob/master/Screenshots/Screenshot7.png)
+![Image Screenshot](https://github.com/Ingan121/Redmond-Firefox/blob/master/Screenshots/Screenshot.png)
 
 [Credits (unfinished)](https://github.com/Ingan121/Redmond-Firefox/blob/master/Credits.md)
 
@@ -28,14 +28,3 @@ The Firefox theme should now be installed and will be activated once you close a
 * Also the theme was designed with a certain color scheme in mind so it may not display correctly
 with certain color schemes.
 * For now it is recommended to use the "Windows Standard" (2000) color scheme.
-
-# Original README
-An Internet Explorer inspired theme for Firefox
-
-## About
-The Redmond-Firefox project aims to create a Firefox theme mimicking classic Internext Explorer.
-The project originally started when I was designing Firefox themes to go along with my GTK Redmond97 and Redmond2K themes.
-
-##Screenshots
-![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/screenshot3.png)
-![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/screenshot4.png)
