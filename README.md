@@ -1,5 +1,5 @@
-# IE6Fox
-Modified version of Redmond-Firefox designed for pre-XP IE6-like look with the use of user JS and some modifications. (WIP)
+# IE5Fox
+Modified version of Redmond-Firefox designed for IE5-like look with the use of user JS and some modifications. (WIP)
 
 Designed for use with real classic theme on Windows. If you're using Windows newer than 8, visit [WinClassic](https://winclassic.boards.net) to apply classic theme on your desktop.
 
