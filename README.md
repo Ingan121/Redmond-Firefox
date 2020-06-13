@@ -12,7 +12,6 @@ Designed for use with real classic theme on Windows. If you're using Windows new
 2. Put the contents of Firefox-ExecutableDir into the Firefox directory (usually in C:\Program Files\Mozilla Firefox)
 3. Delete the startupCache folder in %localappdata%\Mozilla\Firefox\Profiles\\(your profile folder).
 * If you use bookmarks bar, move the bookmarks toolbar items to the toolbar below address bar then disable the original bookmarks bar.
-* Current version only supports the compact mode, so if you don't use it, you should change the height values in toolbars.css.
 
 Note:
 [ If you have not enabled custom user style sheets (userchrome): ]
