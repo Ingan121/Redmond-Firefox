@@ -33,7 +33,7 @@
 }
 
 /* Hovered icon background gradient */
-#nav-bar toolbarbutton:not([id="forward-button"]):not([id="back-button"]):not([disabled]):hover .toolbarbutton-icon {
+#nav-bar toolbarbutton:not([id="forward-button"]):not([id="back-button"]):not([disabled]):-moz-any([open], [checked], :hover) .toolbarbutton-icon {
   background-image: linear-gradient(#fff, #98cfef) !important;
 }
 

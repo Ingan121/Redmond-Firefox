@@ -113,7 +113,13 @@ background-color: transparent !important;
 #main-window #PersonalToolbar toolbarbutton:hover {
   border-radius: 0 !important;
   border-image: url("image/toolbar_button.png") !important;
-  border-image-slice: 1 1 1 1 !important; }
+  border-image-slice: 1 1 1 1 !important;
+}
+
+#main-window #PersonalToolbar toolbarbutton:-moz-any([open], [checked], :hover:active) {
+  border-radius: 0 !important;
+  border-image: url("image/toolbar_button_pressed.png") !important;
+  border-image-slice: 1 1 1 1 !important;
 }
 
 #PersonalToolbar toolbarbutton:active {
@@ -142,14 +148,20 @@ background-color: transparent !important;
   padding-left: 2px !important;
   border: 1px solid transparent !important;
   margin-right: 2px !important;
-  padding: 1px !important; } 
+  padding: 1px !important;
+}
+
+#main-window:not([uidensity="compact"]) #nav-bar .toolbarbutton-1 {
+  min-width: 60px !important;
+  max-width: 80px !important;
+}
 
 #nav-bar .toolbarbutton-1:not([disabled="true"]):hover {
   border-image: url("image/toolbar_button.png") !important;
   border-image-slice: 1 1 1 1 !important;
 }
 
-#nav-bar .toolbarbutton-1:not([disabled="true"]):active {
+#nav-bar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hover:active) {
   border-image: url("image/toolbar_button_pressed.png") !important;
   border-image-slice: 1 1 1 1 !important;
 }
@@ -206,6 +218,10 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
   border-radius: 0px !important;
 }
 
+.webextension-browser-action:not(:-moz-any([open], [checked], :hover:active, :hover)) .toolbarbutton-icon {
+  filter: grayscale(100%) !important;
+}
+
 #back-button .toolbarbutton-icon {
   list-style-image: url("image/Back.png") !important;
 }
@@ -214,7 +230,7 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
   list-style-image: url("image/Back_disabled.png") !important;
 }
 
-#back-button:not([disabled]):hover .toolbarbutton-icon {
+#back-button:not([disabled]):-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   list-style-image: url("image/Back_hover.png") !important;
 }
 
@@ -239,7 +255,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/Forward_disabled.png") !important;
 }
 
-#forward-button:not([disabled]):hover .toolbarbutton-icon {
+#forward-button:not([disabled]):-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   list-style-image: url("image/Forward_hover.png") !important;
 }
 
@@ -251,7 +267,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/Stop_disabled.png") !important;
 }
 
-#stop-button:not([disabled]):hover .toolbarbutton-icon {
+#stop-button:not([disabled]):-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   list-style-image: url("image/Stop_hover.png") !important;
 }
 
@@ -263,7 +279,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/Refresh.png") !important;
 }
 
-#reload-button:not([disabled]):hover .toolbarbutton-icon {
+#reload-button:not([disabled]):-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   list-style-image: url("image/Refresh_hover.png") !important;
 }
 
@@ -271,7 +287,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/Home.png") !important;
 }
 
-#home-button:not([disabled]):hover .toolbarbutton-icon {
+#home-button:not([disabled]):-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   list-style-image: url("image/Home_hover.png") !important;
 }
 
@@ -279,7 +295,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/Find.png") !important;
 }
 
-#find-button:not([disabled]):hover .toolbarbutton-icon {
+#find-button:not([disabled]):-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   list-style-image: url("image/Find_hover.png") !important;
 }
 
@@ -288,7 +304,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/Print.png") !important;
 }
 
-#print-button:not([disabled]):hover .toolbarbutton-icon {
+#print-button:not([disabled]):-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   list-style-image: url("image/Print_hover.png") !important;
 }
 
@@ -297,9 +313,25 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/History.png") !important;
 }
 
-#history-panelmenu:hover .toolbarbutton-icon {
+#history-panelmenu:-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   padding: 3px !important;
   list-style-image: url("image/History_hover.png") !important;
+}
+
+#sidebar-button .toolbarbutton-icon {
+  list-style-image: url("image/View.png") !important;
+}
+
+#sidebar-button:-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
+  list-style-image: url("image/View_hover.png") !important;
+}
+
+#library-button .toolbarbutton-icon {
+  list-style-image: url("image/Folders.png") !important;
+}
+
+#library-button:-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
+  list-style-image: url("image/Folders_hover.png") !important;
 }
 
 #PanelUI-button {
@@ -388,7 +420,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/Favorites.png") !important;
 }
 
-#bookmarks-menu-button:hover .toolbarbutton-icon {
+#bookmarks-menu-button:-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   list-style-image: url("image/Favorites_hover.png") !important;
 }
 
@@ -396,7 +428,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/Cut.png") !important;
 }
 
-#cut-button:hover .toolbarbutton-icon {
+#cut-button:-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   list-style-image: url("image/Cut_hover.png") !important;
 }
 
@@ -404,7 +436,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/Copy.png") !important;
 }
 
-#copy-button:hover .toolbarbutton-icon {
+#copy-button:-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   list-style-image: url("image/Copy_hover.png") !important;
 }
 
@@ -412,7 +444,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/Paste.png") !important;
 }
 
-#paste-button:hover .toolbarbutton-icon {
+#paste-button:-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
   list-style-image: url("image/Paste_hover.png") !important;
 }
 
@@ -422,7 +454,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/Drive.png") !important;
 }
 
-#pocket-button:hover {
+#pocket-button:-moz-any([open], [checked], :hover:active, :hover) {
   list-style-image: url("image/Drive_hover.png") !important;
 }
 
@@ -431,7 +463,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/read.png") !important;
 }
 
-#reader-mode-button:hover {
+#reader-mode-button:-moz-any([open], [checked], :hover:active, :hover) {
   list-style-image: url("image/read_hover.png") !important;
 }
 

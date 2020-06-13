@@ -76,7 +76,7 @@ background-color: transparent !important;
   margin:0px !important;
 }
 
-#main-window #PersonalToolbar toolbarbutton:hover {
+#main-window #PersonalToolbar toolbarbutton:-moz-any([open], [checked], :hover) {
   background-image: linear-gradient(#fff, #aacdf6, #ecf2f9) !important;
   box-shadow: 1px 1px #fff inset !important;
   border-radius: 3px !important;

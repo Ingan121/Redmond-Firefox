@@ -123,14 +123,20 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
   padding-left: 2px !important;
   border: 1px solid transparent !important;
   margin-right: 2px !important;
-  padding: 1px !important; } 
+  padding: 1px !important;
+}
+
+#main-window:not([uidensity="compact"]) #nav-bar .toolbarbutton-1 {
+  min-width: 60px !important;
+  max-width: 80px !important;
+} 
 
 #nav-bar .toolbarbutton-1:not([disabled="true"]):hover {
   border-image: url("image/toolbar_button.png") !important;
   border-image-slice: 1 1 1 1 !important;
 }
 
-#nav-bar .toolbarbutton-1:not([disabled="true"]):active {
+#nav-bar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :hover:active) {
   border-image: url("image/toolbar_button_pressed.png") !important;
   border-image-slice: 1 1 1 1 !important;
 }
@@ -184,7 +190,13 @@ background-color: transparent !important;
 #main-window #PersonalToolbar toolbarbutton:hover {
   border-radius: 0 !important;
   border-image: url("image/toolbar_button.png") !important;
-  border-image-slice: 1 1 1 1 !important; }
+  border-image-slice: 1 1 1 1 !important;
+}
+
+#main-window #PersonalToolbar toolbarbutton:-moz-any([open], [checked], :hover:active) {
+  border-radius: 0 !important;
+  border-image: url("image/toolbar_button_pressed.png") !important;
+  border-image-slice: 1 1 1 1 !important;
 }
 
 #PersonalToolbar toolbarbutton:active {
