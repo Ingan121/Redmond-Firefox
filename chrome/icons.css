@@ -219,6 +219,11 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
   border-radius: 0px !important;
 }
 
+.webextension-browser-action:not(:-moz-any([open], [checked], :hover:active, :hover)) .toolbarbutton-icon {
+  filter: grayscale(100%) !important;
+}
+
+
 #back-button .toolbarbutton-icon {
   list-style-image: url("image/Back.png") !important;
 }
@@ -243,14 +248,6 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
 
 #main-window[uidensity="compact"] #back-button .toolbarbutton-icon {
   padding: 5px !important; }
-
-.webextension-browser-action .toolbarbutton-icon {
-  filter: grayscale(100%) !important;
-}
-
-.webextension-browser-action:-moz-any([open], [checked], :hover:active, :hover) .toolbarbutton-icon {
-  filter: none !important;
-}
 
 #forward-button .toolbarbutton-icon {
   list-style-image: url("image/Forward.png") !important;
