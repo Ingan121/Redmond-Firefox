@@ -1,0 +1,14 @@
+toolbarseparator {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  border-width: 0 1px;
+  border-style: solid;
+  border-inline-end-color: ThreeDHighlight;
+  border-inline-start-color: ThreeDShadow;
+  background-color: ThreeDFace
+}
+
+toolbarseparator.chromeclass-toolbar-additional {
+  margin-top: 2px;
+  margin-bottom: 3px;
+}

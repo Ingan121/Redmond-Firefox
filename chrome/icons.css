@@ -157,6 +157,17 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
   max-width: 80px !important;
 }
 
+#main-window[uidensity="compact"] #nav-bar .toolbarbutton-1 {
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+}
+
+#main-window[uidensity="compact"] #nav-bar .toolbarbutton-text {
+  margin-top: 3px !important;
+  margin-left: -2px !important;
+  margin-right: -2px !important;
+}
+
 #nav-bar .toolbarbutton-1:not([disabled="true"]):hover {
   border-image: url("image/toolbar_button.png") !important;
   border-image-slice: 1 1 1 1 !important;
@@ -176,7 +187,8 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
 #nav-bar .toolbarbutton-1 > .toolbarbutton-badge-stack {
   border: none !important;
   border-radius: 0px !important;
-  margin: 0px !important; }
+  margin: 0px !important;
+}
 
 toolbar toolbaritem .toolbarbutton-1[disabled] .toolbarbutton-text,
 toolbar .toolbarbutton-1[disabled]:not([type="menu-button"]) .toolbarbutton-text,
@@ -394,17 +406,17 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/close_hover.png") !important;
 }
 
-#nav-bar #star-button {
+#star-button {
   padding: 5px !important;
   list-style-image: url("image/star.png") !important;
 }
 
-#nav-bar #star-button:hover {
+#star-button:hover {
   padding: 4px !important;
   list-style-image: url("image/star_hover.png") !important;
 }
 
-#nav-bar #star-button[starred="true"] {
+#star-button[starred="true"] {
   list-style-image: url("image/star_saved.png") !important;
 }
 

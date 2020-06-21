@@ -5,6 +5,7 @@
 @import "urlbar.css"; 
 @import "contextmenu.css";
 @import "WhiteHoverButtonTextFix.css";
+@import "separator.css";
 
 #main-window {
    background-color: #d4d0c8 !important;
