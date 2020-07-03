@@ -8,6 +8,6 @@
 @import "separator.css";
 
 #main-window {
-   background-color: #d4d0c8 !important;
-   color: #000 !important;
+   /* background-color: #d4d0c8 !important; */
+   color: if (L + 0.05) / (0.0 + 0.05) > (1.0 + 0.05) / (L + 0.05) use #000000 else use #ffffff !important;
 }

@@ -4,4 +4,5 @@
 * [Classic context menu by vrubleg](https://www.reddit.com/r/FirefoxCSS/comments/dat87e/windows_classic_theme_make_context_menu_3d_again/)
 * [WTEAYSBy by BigNoober](https://www.reddit.com/r/FirefoxCSS/comments/f9dvu4/the_janky_downloading_progress_bar/) (currently not used)
 * [CustomJSforFx (by Aris-t2)](https://github.com/Aris-t2/CustomJSforFx)
+* [Automatically decide font color in white or black depending on background color](https://stackoverflow.com/questions/3942878/how-to-decide-font-color-in-white-or-black-depending-on-background-color)
 * Windows 98-2000 icons by Microsoft (Proprietary)

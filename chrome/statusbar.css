@@ -14,10 +14,11 @@
 }
 
 #browser-bottombox {
-	height: 20px;
-        border: 0px solid transparent !important;
-        border-right: 1px solid transparent !important;
-        box-shadow: 0 2px #c0c0c0 inset, 1px 3px #505050 inset, -1px -1px #fff inset !important;
+	height: 22px;
+    border: 0px solid transparent !important;
+    border-right: 1px solid transparent !important;
+    box-shadow: 0 2px #c0c0c0 inset, 1px 3px #505050 inset, -1px -1px #fff inset !important;
+	padding-top: 1px !important;
 }
 #statuspanel {
 	height: 18px !important;
